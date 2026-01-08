@@ -31,7 +31,7 @@ function preload() {
     this.load.image("road", "assets/road.png");
     this.load.image("column", "assets/column.png");
 
-    // Your bird.png is a single tiny image (17x12), so load as IMAGE not spritesheet
+    // bird.png is a single tiny image (17x12), so load as IMAGE not spritesheet
     this.load.image("bird", "assets/bird.png");
 }
 
@@ -110,12 +110,12 @@ function create() {
         } else if (gameOver) {
             restart.call(this);
         }
-        // Note: Click does NOT flap during gameplay - only SPACE does
+        
     });
 }
 
 function startGame() {
-    console.log("✅ startGame() called");
+    console.log("startGame() called");
     if (gameStarted) return;
 
     gameStarted = true;
@@ -229,7 +229,7 @@ function update() {
 
     if (gameOver) return;
 
-    // ✅ SPACE flaps (reliable)
+    //  SPACE flaps (reliable)
     if (spaceKey && Phaser.Input.Keyboard.JustDown(spaceKey)) {
         flap();
     }
