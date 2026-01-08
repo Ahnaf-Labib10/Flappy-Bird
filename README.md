@@ -7,3 +7,5 @@ A Flappy Bird clone built using **Phaser 3** and **JavaScript**.
 
 ## Run locally
 Open the folder in VS Code and use **Live Server** on `index.html`.
+## Live Demo
+👉 https://ahnaf-labib10.github.io/Flappy-Bird/ 
